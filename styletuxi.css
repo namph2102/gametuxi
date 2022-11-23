@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-sea: #08150D;
+    --primary-red: #7A0300;
+    --primary-pink: #E0417C;
+    --primary-yellow: #FFAA11;
+    --primary-blue: #001953;
+    --primary-color: #545957;
+
+}
+
+body {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#container {
+    width: 100%;
+    background-color: #5C7D5F;
+    height:100%;
+
+}
+
+.content {
+    display: flex;
+
+}
+
+.content__left {
+    flex: 1;
+
+}
+
+.content__left_head {
+    width: 100%;
+    height: 30%;
+    background-image: url(https://pkmacbook.com/wp-content/uploads/2021/06/background-co-dien-dep_055326590.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.content__left_statistic {
+    background-image: url(https://media.istockphoto.com/photos/parchment-old-stained-paper-background-picture-id1161937016);
+    height: 70%;
+    width: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.group-statistic {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.group-statistic img {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.group-statistic_content {
+    width: 70%;
+}
+
+.statistic-group {
+    color: darkorange;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+    line-height: 20px;
+}
+
+/* REMOVE % WIN--LOSE*/
+.group-statistic_content .statistic--backgroup {
+    flex: 1;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    border-radius: 50px;
+    height: 35px;
+    border: 2px solid white;
+}
+
+.group-statistic_content .statistic--bua {
+    background-color: var(--primary-yellow);
+    border-radius: 40px;
+    height: 31px;
+
+}
+
+.group-statistic_content .statistic--bao {
+    background-color: var(--primary-pink);
+    border-radius: 40px;
+    height: 31px;
+
+
+}
+
+.group-statistic_content .statistic--keo {
+    background-color: var(--primary-blue);
+    border-radius: 40px;
+    height: 31px;
+
+}
+
+/*---End----- REMOVE % WIN--LOSE*/
+.content__body {
+    flex: 2;
+    background-color: rgb(72, 97, 97);
+    background-image: url(https://png.pngtree.com/element_our/20200611/ourlarge/pngtree-radiant-circle-of-light-image_2252808.jpg);
+    background-size: 100% 100%;
+}
+
+.content__right {
+    background-image: url(https://pkmacbook.com/wp-content/uploads/2021/06/background-co-dien-dep_055326590.jpg);
+    background-size: 100% 100%;
+    flex: 1;
+    background-color: firebrick;
+}
+
+.content__left_head {
+    text-align: center;
+}
+
+.group--head {
+
+    color: var(--primary-blue);
+}
+
+#phienbody,
+#phien {
+    color: darkorange;
+    font-family: inherit;
+}
+
+#time {
+    color: var(--primary-red);
+    font-size: 50px;
+}
+
+/* content__body*/
+.content__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.content__body h1 {
+    color: white;
+}
+
+.content__body .content__body-info {
+    width: 180px;
+    height: 60px;
+    background: linear-gradient(to top, #043a04, #25a525);
+    border: 2px solid wheat;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.content_resulf {
+    border-radius: 80%;
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    width: 400px;
+    height: 300px;
+
+}
+
+.content_resulf img {
+    transform: scale(1.7);
+    border-radius: 80%;
+    width: 30%;
+    object-fit: cover;
+
+}
+#hientien{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    font-family: cursive;
+    left:25% ;
+  
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--primary-yellow);
+    font-family: unset;
+    transform: translateY(300px);
+    animation: fadein ease 3s infinite;
+    opacity: 1;
+    
+}
+@keyframes fadein{
+    from{
+        transform: translateY(300px);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+
+    text-align: center;
+
+}
+
+tr {
+    display: flex;
+}
+
+th {
+    flex: 1;
+
+}
+
+td {
+    flex: 1;
+    height: 40px;
+    margin-top: 10px;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #E4E7C9;
+}
+
+tr:nth-child(2n) {
+    background-color: #F3F2E3;
+}
+
+tr:first-child {
+    background-color: #E4E7C9;
+    color: var(--primary-blue);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*---End----- REMOVE % WIN--LOSE*/
+.game {
+
+    display: flex;
+    height: 110px;
+    justify-content: space-around;
+}
+
+.game__left {
+    display: flex;
+    width: 33%;
+    background-color: #E7E076;
+    border: 5px solid #808080;
+
+}
+
+.game__body {
+    display: flex;
+    width: 33%;
+    background-color: #E3E9B0;
+    border: 5px solid #808080;
+
+}
+
+.game__right {
+    display: flex;
+    width: 33%;
+    background-color: #F1EAA4;
+    border: 5px solid #808080;
+
+}
+
+.game img {
+    border-radius: 80%;
+}
+
+.game__body--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.game__body--flex input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 60px;
+    font-size: 22px;
+    color: orangered;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.game__body--flex input:focus {
+    border: none;
+    background-color: #ffffff;
+
+}
+
+.game__body-footer {
+    color: orangered;
+    font-size: 20px;
+    width: 100px;
+    background-color: #cfcf79;
+    border-radius: 50%;
+
+}
+
+/*---End----- REMOVE % WIN--LOSE*/
+.footer {
+    height: 80px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer__left {
+    width: 24%;
+    background-color: #F1EAA4;
+
+}
+
+.footer__body {
+    width: 51%;
+    height: 80px;
+    background-color: #F1EAA4;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__right {
+    width: 24%;
+    background-color: #F1EAA4;
+}
+
+.footer__left--head {
+    margin-left: 20px;
+}
+
+.footer__left--head input {
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    color: orangered;
+    border-radius: 50px;
+    text-align: right;
+    font-size: 21px;
+}
+
+.footer__body img {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+}
+
+.footer__right {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__right input {
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: orangered;
+    font-weight: bold;
+
+}
+
+.footer__right img {
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+}
+
+#table tr td img {
+    width: 30px;
+    border-radius: 80%;
+}
+
+#table tr td {
+    color: darkorange;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/*---End----- REMOVE % WIN--LOSE*/

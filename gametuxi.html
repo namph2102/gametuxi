@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../myweb/style.css">
+    <link rel="stylesheet" href="styletuxi.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Game Tù xì</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content">
+            <div class="content__left">
+                <div class="content__left_head">
+                    <h2 class="group--head">MÃ VÉ CƯỢC</h2>
+                    <h3 id="phien">000000</h3>
+                    <h1 id="time">00:21</h1>
+
+                </div>
+                <div class="content__left_statistic">
+                    <h2 class="group--head">THỐNG KÊ</h2>
+                    <div class="group-statistic">
+                        <img src="./img/bua.png" alt="">
+                        <div class="group-statistic_content">
+                            <div id="a" class="statistic-group ">0</div>
+                            <div class="statistic--backgroup">
+                                <div id="aa" class="statistic--bua"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="group-statistic">
+                        <img src="./img/bao.png" alt="">
+                        <div class="group-statistic_content">
+                            <div id="b" class="statistic-group">0</div>
+                            <div class="statistic--backgroup">
+                                <div id="bb" class="statistic--bao"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-statistic">
+                        <img src="./img/keo.png" alt="">
+                        <div class="group-statistic_content">
+                            <div id="c" class="statistic-group">0</div>
+                            <div class="statistic--backgroup">
+                                <div id="cc" class="statistic--keo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="group--head">SỐ DƯ: <span id="coins" style="color: red;"></span></h2>
+                </div>
+
+            </div>
+
+
+            <div class="content__body">
+                <h1>MÃ VÉ ĐẶT CƯỢC <span id="phienbody">005656</span></h1>
+                <div class="content__body-info">
+                    <div id="info--head" class="content__body-info--head">CHƯA ĐẶT</div>
+                    <div id="coin" class="content__body-info--body"></div>
+                </div>
+                <div class="content_resulf">
+                    <img id="resulf" src="https://conggiao.org/hinh-anh/me-maria/010.jpg" alt="">
+                </div>
+                <div id="hientien">
+
+                </div>
+            </div>
+            <div class="content__right">
+                <table id="table">
+                    <tr>
+                        <th>MÃ VÉ CƯỢC</th>
+                        <th>KẾT QUẢ</th>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="game">
+            <div class="game__left">
+                <img src="./img/bua.png" alt="">
+                <div class="game__body--flex">
+                    <input name="datcuoc" type="number">
+                    <div class="game__body-footer">x2</div>
+                </div>
+            </div>
+            <div class="game__body">
+                <img src="./img/bao.png" alt="">
+                <div class="game__body--flex">
+                    <input name="datcuoc" type="number">
+                    <div class="game__body-footer">x2</div>
+                </div>
+            </div>
+            <div class="game__right">
+                <img src="./img/keo.png" alt="">
+                <div class="game__body--flex">
+                    <input name="datcuoc" type="number">
+                    <div class="game__body-footer">x2 </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__left">
+                <div class="footer__left--head">
+                    <h2 style="font-size:22px;" class="group--head">TỔNG CƯỢC:</h2>
+                    <input id="tongcuoc" type="Number" value="0">
+                </div>
+            </div>
+            <div class="footer__body">
+                <img onclick="giadc(0)" src="./img/1k.png" alt="1">
+                <img onclick="giadc(1)" src="./img/5k.png" alt="2">
+                <img onclick="giadc(2)" src="./img/25k.png" alt="3">
+                <img onclick="giadc(3)" src="./img/50k.png" alt="4">
+                <img onclick="giadc(4)" src="./img/100k.png" alt="5">
+                <img onclick="giadc(5)" src="./img/500k.png" alt="6">
+
+            </div>
+            <div class="footer__right">
+                <img style="cursor: pointer;" onclick="giadc(6)" src="./img/coin.png" alt="">
+                <input id="tudat" type="number" placeholder="Đặt cược" value="">
+            </div>
+        </div>
+    </div>
+  
+</body>
+<script src="cacuoc.js"></script>
+
+</html>
